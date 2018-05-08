@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
 
 </head>
 
@@ -20,108 +21,107 @@
                 <input type="text" class="form-control" id="name" placeholder="John/Jane Doe">
             </div>
             <div class="form-group">
-                <label for="q1">How much do you like animals?</label>
+                <label for="q1">How much do you like animals? (1 is not at all, 5 is a lot)</label>
                 <select class="form-control" id="q1">
-                    <option>1 (Not at all)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (A Lot)</option>
+                    <option>5</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="q2">How much do you like to travel?</label>
+                <label for="q2">How much do you like to travel? (1 is not at all, 5 is a lot)</label>
                 <select class="form-control" id="q2">
-                    <option>1 (Not at all)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (A Lot)</option>
+                    <option>5</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="q3">How much do you like to stay up late?</label>
+                <label for="q3">How much do you like to stay up late? (1 is not at all, 5 is a lot)</label>
                 <select class="form-control" id="q3">
-                    <option>1 (Not at all)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (A Lot)</option>
+                    <option>5</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="q4">How much do you like trying new food?</label>
+                <label for="q4">How much do you like trying new food? (1 is not at all, 5 is a lot)</label>
                 <select class="form-control" id="q4">
-                    <option>1 (Not at all)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (A Lot)</option>
+                    <option>5</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="q5">How much do you like being scared?</label>
+                <label for="q5">How much do you like being scared? (1 is not at all, 5 is a lot)</label>
                 <select class="form-control" id="q5">
-                    <option>1 (Not at all)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (A Lot)</option>
+                    <option>5</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="q6">How much do you believe in true love?</label>
+                <label for="q6">How much do you believe in true love? (1 is not at all, 5 is a lot)</label>
                 <select class="form-control" id="q6">
-                    <option>1 (Not at all)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (A Lot)</option>
+                    <option>5</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="q7">How much do you know about quantum physics?</label>
+                <label for="q7">How much do you know about quantum physics? (1 is not at all, 5 is a lot)</label>
                 <select class="form-control" id="q7">
-                    <option>1 (Not at all)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (A Lot)</option>
+                    <option>5</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="q8">What is the likelihood that there are aliens among us?</label>
+                <label for="q8">What is the likelihood that there are aliens among us? (1 is not at all, 5 is a lot)</label>
                 <select class="form-control" id="q8">
-                    <option>1 (Not at all)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (A Lot)</option>
+                    <option>5</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="q9">How much fun are you having right now?</label>
+                <label for="q9">How much fun are you having right now? (1 is not at all, 5 is a lot)</label>
                 <select class="form-control" id="q9">
-                    <option>1 (Not at all)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (A Lot)</option>
+                    <option>5</option>
                 </select>
             </div>
             <div class="form-group">
-                <label for="q10">How much do you trust this survey?</label>
+                <label for="q10">How much do you trust this survey? (1 is not at all, 5 is a lot)</label>
                 <select class="form-control" id="q10">
-                    <option>1 (Not at all)</option>
+                    <option>1</option>
                     <option>2</option>
                     <option>3</option>
                     <option>4</option>
-                    <option>5 (A Lot)</option>
+                    <option>5</option>
                 </select>
             </div>
-            <a href="/api/friends">
-                <button class="btn btn-lg btn-primary"> Find Friends </button>
-            </a>
+
+            <button type="submit" class="btn btn-lg btn-primary submit"> Find A Friend </button>
         </form>
         <br>
         <br>
@@ -132,7 +132,7 @@
                 <p>
                     <a href="/api/friends">Friends</a> |
                     <a href="/survey">Survey</a> |
-                    <a href="https://github.com/afhaque/HotRestaurant">GitHub Repo</a>
+                    <a href="https://github.com/">GitHub Repo</a>
                 </p>
             </div>
         </footer>
@@ -141,5 +141,67 @@
 
 
 </body>
+<script type="text/javascript">
+
+    // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+    // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+    // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
+    // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+
+    $(".submit").on("click", function (event) {
+        event.preventDefault();
+
+        var person = {
+            name: $("#name").val().trim(),
+            answers: [$("#q1").val().trim(),
+                $("#q2").val().trim(),
+                $("#q3").val().trim(),
+                $("#q4").val().trim(),
+                $("#q5").val().trim(),
+                $("#q6").val().trim(),
+                $("#q7").val().trim(),
+                $("#q8").val().trim(),
+                $("#q9").val().trim(),
+                $("#q10").val().trim()]
+        };
+
+        $.post("/api/friends", person,
+            function (data) {
+                console.log(data)
+
+                
+
+
+
+                //working where each answer is its own key pair value
+                // personalArr = [person.q1, person.q2, person.q3, person.q4, person.q5, person.q6, person.q7, person.q8, person.q9, person.q10];
+                // othersArr = [];
+                
+                // for (var i = 0; i < data.length; i++) {
+                //     if (data[i].name !== person.name) {
+                //         var score = {name: undefined,
+                //                     ratings: [],
+                //                     computed: undefined}
+                //         var check = 0;
+                //         for (var key in data[i]) {
+                //             if(key === name){
+                //                 score.name = data[i][key]
+                //             } else {
+                //             score.ratings.push(Math.abs(parseInt(data[i][key] - parseInt(personalArr[check]))));       
+                //             check++;
+                //             }
+                //         }
+                //         score.computed = score.ratings.reduce(function(acc, val) { return acc + val; });
+                //         othersArr.push(score)
+                //     }
+                // }
+                
+
+
+            });
+
+    });
+
+</script>
 
 </html>
